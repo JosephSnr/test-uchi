@@ -1,0 +1,85 @@
+.scale {
+  position: relative;
+  top: 570px;
+  left: 10px;
+}
+
+.myCanvas {
+  position: relative;
+  left: 45px;
+  top: 402px;
+}
+
+.task {
+  position: absolute;
+  left: 30%;
+  top: 29%;
+  font-size: 80px;
+  transform: translate(-25%, -25%);
+}
+
+.firstInput {
+  position: relative;
+  top: 300px;
+  width: 12px;
+  border-radius: 5px;
+  height: 20px;
+  font-size: 19px;
+  border: 1px solid gray;
+}
+
+.firstAnswer {
+  position: relative;
+  top: 250px;
+  font-size: 25px;
+  width: 20px;
+  visibility: hidden;
+}
+
+.secondInput {
+  position: relative;
+  top: 330px;
+  width: 12px;
+  border-radius: 5px;
+  height: 20px;
+  font-size: 19px;
+  border: 1px solid gray;
+  visibility: hidden;
+}
+
+.secondAnswer {
+  position: relative;
+  top: 230px;
+  font-size: 25px;
+  width: 20px;
+  visibility: hidden;
+}
+
+.firstTerm {
+  background-color: white;
+}
+
+.secondTerm {
+  background-color: white;
+}
+
+.solution {
+  position: relative;
+  border-radius: 10px;
+  height: 100px;
+  bottom: 180px;
+  left: 220px;
+  width: 110px;
+  font-size: 80px;
+  border: 1px solid gray;
+  visibility: hidden;
+}
+
+.final {
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  font-size: 80px;
+  transform: translate(-25%, -25%);
+  visibility: hidden;
+}
