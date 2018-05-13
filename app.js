@@ -1,6 +1,5 @@
 'use strict'
 
-
 function randomInteger(min, max) {
     var rand = min + Math.random() * (max + 1 - min);
     rand = Math.floor(rand);
@@ -9,8 +8,12 @@ function randomInteger(min, max) {
 
 function drawArc(xStart, number, height) {
   ctx.moveTo(39 * xStart, 100);
-  ctx.strokeStyle = 'red';
-  ctx.quadraticCurveTo(19.5 * (2 * xStart + number), height, 39 * (number + xStart), 100)
+  ctx.strokeStyle = 'purple';
+  ctx.lineWidth = 2;
+  ctx.quadraticCurveTo(19.5 * (2 * xStart + number), height, 39 * (number + xStart), 100);
+  ctx.lineTo(39 * (number + xStart) - 3, 90);
+  ctx.moveTo(39 * (number + xStart), 100);
+  ctx.lineTo(39 * (number + xStart) - 10, 100 - 3);
   ctx.stroke();
 }
 
