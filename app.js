@@ -7,13 +7,19 @@ function randomInteger(min, max) {
 }
 
 function drawArc(xStart, number, height) {
+  var ANGLE = Math.atan2(100 - height, 19.5 * number);
   ctx.moveTo(39 * xStart, 100);
   ctx.strokeStyle = 'purple';
   ctx.lineWidth = 2;
   ctx.quadraticCurveTo(19.5 * (2 * xStart + number), height, 39 * (number + xStart), 100);
-  ctx.lineTo(39 * (number + xStart) - 3, 90);
-  ctx.moveTo(39 * (number + xStart), 100);
-  ctx.lineTo(39 * (number + xStart) - 10, 100 - 3);
+  ctx.save();
+  ctx.translate(39 * (xStart + number), 100);
+  ctx.rotate(ANGLE / 2);
+  ctx.lineTo(- 10, 0);
+  ctx.moveTo(0, 0);
+  ctx.rotate(ANGLE);
+  ctx.lineTo(- 10, 0);
+  ctx.restore();
   ctx.stroke();
 }
 
